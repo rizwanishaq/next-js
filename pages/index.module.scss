@@ -1,0 +1,90 @@
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.navigation {
+    text-align: right;
+    padding: 15px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    a {
+       margin: 0 15px;
+       transition: color 200ms; 
+       &:hover {
+           color: rgb(197, 36, 15);
+       }
+    }
+}
+
+.logoImage {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+}
+
+.identity {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+    .logoImage {
+        margin-right: 25px;
+    }
+    .text {
+        .name {
+          font-size: 25px;
+          font-weight: bold;
+          letter-spacing: 1px; 
+          margin-bottom: 5px;
+          color: #93deff;
+        }
+        .description {
+            font-size: 16px;
+        }
+    }
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    .left {
+        width: 30%;
+        font-weight: bold;
+        margin-left: 20px;
+        color: #0b1111
+    }
+    .right {
+        width: 70%;
+    }
+}
+
+.skills {
+    padding: 25px 0;
+    padding-top: 50px;
+}
+
+.projects{
+    margin-bottom: 50px;
+    padding-top: 50px;
+}
+
+@media (max-width: 600px) {
+    .identity {
+        flex-direction: column;
+    }
+    .logoImage {
+        margin: 0 0 10px 0;   
+    }
+}
